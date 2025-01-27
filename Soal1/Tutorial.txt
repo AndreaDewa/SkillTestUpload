@@ -1,0 +1,1 @@
+pastikan JDk terinstall, langsung run main class-nya
