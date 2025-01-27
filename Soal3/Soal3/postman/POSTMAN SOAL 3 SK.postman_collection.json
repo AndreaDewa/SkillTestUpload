@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "07ea670b-b704-4273-860e-0a15ebf7e6f0",
+		"name": "POSTMAN SOAL 3 SK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20066682"
+	},
+	"item": [
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"konsumen\": \"New Consumer Name wawawa\",\r\n  \"items\": [\r\n    {\r\n      \"id_varian_barang\": 101,\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"id_varian_barang\": 102,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/transaksi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"transaksi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/stok/by-nama-barang?namaBarang=Fiona%20Tunik%20Set%20Kulot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"stok",
+						"by-nama-barang"
+					],
+					"query": [
+						{
+							"key": "namaBarang",
+							"value": "Fiona%20Tunik%20Set%20Kulot"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
